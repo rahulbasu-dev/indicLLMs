@@ -25,27 +25,7 @@ The project addresses the scarcity of NLP resources for **Meitei (Manipuri)**, a
 ---
 
 ### 📂 Repository Structure
-
-├── data/
-│ ├── meitei_cqa.jsonl # 500 synthetic cultural QA pairs
-│ ├── translated_squad_meitei.jsonl # 200 translated QA pairs
-│ └── preprocessed/ # Tokenized and split datasets
-│
-├── models/
-│ └── fine_tuned_indicbert/ # Fine-tuned HuggingFace model
-│
-├── scripts/
-│ ├── preprocess.py # Data cleaning, Romanization, tokenization
-│ ├── train.py # HuggingFace Trainer API
-│ ├── evaluate.py # Metrics: BERTScore, BLEU, ROUGE-L
-│
-├── notebooks/
-│ └── QA_pipeline_walkthrough.ipynb
-│
-├── results/
-│ └── evaluation_metrics.json
-│
-└── README.md
+<pre> repo-root/ ├── <b>data/</b> │ ├── meitei_cqa.jsonl # 500 culturally grounded QA pairs │ ├── translated_squad_meitei.jsonl # 200 Meitei-translated SQuAD QA pairs │ └── preprocessed/ # Preprocessed and tokenized versions │ ├── <b>models/</b> │ └── fine_tuned_indicbert/ # Hugging Face model checkpoint directory │ ├── <b>scripts/</b> │ ├── preprocess.py # Data cleaning, Romanization │ ├── train.py # Hugging Face Trainer API │ ├── evaluate.py # BERTScore, BLEU, ROUGE-L │ ├── <b>notebooks/</b> │ └── QA_pipeline_walkthrough.ipynb # Step-by-step training and inference │ ├── <b>results/</b> │ └── evaluation_metrics.json # Final model evaluation scores │ └── README.md # Project overview and documentation </pre>
 
 ---
 
@@ -99,8 +79,6 @@ This repository is released under the **MIT License** for code and **CC BY 4.0**
 ### 👤 Author
 
 **Rahul Basu**  
-Founder, humaNLP Mindful AI Solutions LLP  
-Adjunct Faculty – NLP & RL @ BITS Pilani  
 📧 rahulbasuai@gmail.com  
 🔗 [LinkedIn](https://www.linkedin.com/in/basu-rahul)
 
