@@ -1,9 +1,10 @@
-# indicLLMs 🇮🇳 Culturally-Grounded QA for Meitei (Manipuri)
+
+# 🇮🇳 Culturally-Grounded QA for Meitei (Manipuri)
 **Fine-Tuning IndicBERT on Hybrid Datasets for Low-Resource QA**
 
 ---
 
-### 🧠 Overview
+### Overview
 
 This repository contains all artifacts from the **CS224U Final Project** titled:  
 **"Culturally-Aligned QA for Meitei: Fine-Tuning IndicBERT with Hybrid Datasets"**  
@@ -13,7 +14,7 @@ The project addresses the scarcity of NLP resources for **Meitei (Manipuri)**, a
 
 ---
 
-### 🎯 Objectives
+### Objectives
 
 - Build a lightweight, semantically aligned QA system for Meitei
 - Fine-tune IndicBERT using a hybrid dataset of:
@@ -24,12 +25,35 @@ The project addresses the scarcity of NLP resources for **Meitei (Manipuri)**, a
 
 ---
 
-### 📂 Repository Structure
-<pre> repo-root/ ├── <b>data/</b> │ ├── meitei_cqa.jsonl # 500 culturally grounded QA pairs │ ├── translated_squad_meitei.jsonl # 200 Meitei-translated SQuAD QA pairs │ └── preprocessed/ # Preprocessed and tokenized versions │ ├── <b>models/</b> │ └── fine_tuned_indicbert/ # Hugging Face model checkpoint directory │ ├── <b>scripts/</b> │ ├── preprocess.py # Data cleaning, Romanization │ ├── train.py # Hugging Face Trainer API │ ├── evaluate.py # BERTScore, BLEU, ROUGE-L │ ├── <b>notebooks/</b> │ └── QA_pipeline_walkthrough.ipynb # Step-by-step training and inference │ ├── <b>results/</b> │ └── evaluation_metrics.json # Final model evaluation scores │ └── README.md # Project overview and documentation </pre>
+### Repository Structure
+
+```
+repo-root/
+├── data/
+│   ├── meitei_cqa.jsonl               # 500 culturally grounded QA pairs
+│   ├── translated_squad_meitei.jsonl # 200 Meitei-translated SQuAD QA pairs
+│   └── preprocessed/                 # Preprocessed and tokenized versions
+│
+├── models/
+│   └── fine_tuned_indicbert/         # Hugging Face model checkpoint directory
+│
+├── scripts/
+│   ├── preprocess.py                 # Data cleaning, Romanization
+│   ├── train.py                      # Hugging Face Trainer API
+│   ├── evaluate.py                   # BERTScore, BLEU, ROUGE-L
+│
+├── notebooks/
+│   └── QA_pipeline_walkthrough.ipynb # Step-by-step training and inference
+│
+├── results/
+│   └── evaluation_metrics.json       # Final model evaluation scores
+│
+└── README.md                         # Project overview and documentation
+```
 
 ---
 
-### 🧪 Experimental Setup
+### Experimental Setup
 
 - **Model**: `ai4bharat/IndicBERT` with QA head (`AutoModelForQuestionAnswering`)
 - **Training Data**: 700 QA pairs split into train (80%), val (10%), test (10%)
@@ -39,7 +63,7 @@ The project addresses the scarcity of NLP resources for **Meitei (Manipuri)**, a
 
 ---
 
-### 🧮 Metrics & Performance
+### Metrics & Performance
 
 | Model Variant               | BERTScore (F1) | ROUGE-L | BLEU |
 |----------------------------|----------------|----------|------|
@@ -48,20 +72,18 @@ The project addresses the scarcity of NLP resources for **Meitei (Manipuri)**, a
 | English QA + Backtrans     | 0.76           | 0.15     | 0.00 |
 | Random Span Baseline       | 0.40           | 0.06     | 0.00 |
 
-*Note: Semantic metrics like BERTScore are more reliable in morphologically rich languages like Meitei.*
+---
+
+### Key Features
+
+- **Cultural Alignment**: QA pairs based on festivals, governance, oral traditions, and rituals
+- **Tokenizer Adaptation**: Custom Romanization pipeline
+- **Open Dataset**: JSONL format, released under open license
+- **Reproducible Codebase**: Easily extensible to other Indic languages
 
 ---
 
-### 🧩 Key Features
-
-- ✅ **Cultural Alignment**: QA pairs based on festivals, governance, oral traditions, and rituals
-- ✅ **Tokenizer Adaptation**: Custom Romanization pipeline
-- ✅ **Open Dataset**: JSONL format, released under open license
-- ✅ **Reproducible Codebase**: Easily extensible to other Indic languages
-
----
-
-### 🔬 Research Contributions
+### Research Contributions
 
 - First reproducible QA pipeline for Meitei using LLMs
 - Evaluation of fine-tuned IndicBERT vs zero-shot and translation baselines
@@ -70,13 +92,13 @@ The project addresses the scarcity of NLP resources for **Meitei (Manipuri)**, a
 
 ---
 
-### 🏷 License
+### License
 
 This repository is released under the **MIT License** for code and **CC BY 4.0** for datasets.
 
 ---
 
-### 👤 Author
+### Author
 
 **Rahul Basu**  
 📧 rahulbasuai@gmail.com  
@@ -84,7 +106,7 @@ This repository is released under the **MIT License** for code and **CC BY 4.0**
 
 ---
 
-### 🙌 Acknowledgements
+### Acknowledgements
 
 - Stanford CS224U Teaching Team
 - AI4Bharat for `indictrans2` and `IndicBERT`
@@ -92,9 +114,8 @@ This repository is released under the **MIT License** for code and **CC BY 4.0**
 
 ---
 
-### 🔭 Future Work
+### Future Work
 
 - Add more culturally validated QA pairs in Meitei Mayek
 - Extend to other low-resource languages like Bhojpuri and Konkani
 - Add adapter-based fine-tuning and multilingual alignment
-
