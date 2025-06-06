@@ -8,7 +8,7 @@
 
 This repository contains all artifacts from the **CS224U Final Project** titled:  
 **"Culturally-Aligned QA for Meitei: Fine-Tuning IndicBERT with Hybrid Datasets"**  
-by **Rahul Basu**, Founder – humaNLP Mindful AI Solutions LLP.
+by **Rahul Basu**
 
 The project addresses the scarcity of NLP resources for **Meitei (Manipuri)**, a low-resource language spoken in Northeast India, by creating a culturally-grounded extractive Question Answering (QA) system using a fine-tuned **IndicBERT** model.  
 
