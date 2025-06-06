@@ -101,7 +101,7 @@ This repository is released under the **MIT License** for code and **CC BY 4.0**
 ### Author
 
 **Rahul Basu**  
-📧 rahulbasuai@gmail.com  
+📧 rahulbasu@humanlp.com  
 🔗 [LinkedIn](https://www.linkedin.com/in/basu-rahul)
 
 ---
